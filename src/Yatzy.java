@@ -46,12 +46,7 @@ public class Yatzy {
 
     protected int[] dice;
     public Yatzy(int d1, int d2, int d3, int d4, int d5) {
-        dice = new int[5];
-        dice[0] = d1;
-        dice[1] = d2;
-        dice[2] = d3;
-        dice[3] = d4;
-        dice[4] = d5;
+        dice = new int[]{d1, d2, d3, d4, d5};
     }
 
     public int fours() {
@@ -67,8 +62,7 @@ public class Yatzy {
     }
 
     public static int findCategory(int number, int[] roll, int occurrenceCategory){
-        int occurrence = Yatzy.countOccurrence(number, roll);
-        return (occurrence >= occurrenceCategory)? number * occurrenceCategory : 0;
+        return (Yatzy.countOccurrence(number, roll) >= occurrenceCategory)? number * occurrenceCategory : 0;
     }
 
     public static int score_pair(int d1, int d2, int d3, int d4, int d5)
@@ -137,35 +131,23 @@ public class Yatzy {
 
     public static int fullHouse(int d1, int d2, int d3, int d4, int d5)
     {
-        int[] tallies;
-        boolean _2 = false;
-        int i;
-        int _2_at = 0;
-        boolean _3 = false;
-        int _3_at = 0;
-
-        tallies = new int[6];
-        tallies[d1-1] += 1;
-        tallies[d2-1] += 1;
-        tallies[d3-1] += 1;
-        tallies[d4-1] += 1;
-        tallies[d5-1] += 1;
-
-        for (i = 0; i != 6; i += 1)
-            if (tallies[i] == 2) {
-                _2 = true;
-                _2_at = i+1;
+        int score = 0;
+        int[] roll = {d1, d2, d3, d4, d5};
+        boolean isThreeOfAKind = false;
+        boolean isPair = false;
+        int threeOfAKindScore, pairScore;
+        for(int i=1; i<=6; i++){
+            threeOfAKindScore = Yatzy.findCategory(i, roll, Category.THREE_OF_A_KIND.getValue());
+            pairScore = Yatzy.findCategory(i, roll, Category.PAIR.getValue());
+            if(threeOfAKindScore > 0){
+                score += threeOfAKindScore;
+                isThreeOfAKind = true;
             }
-
-        for (i = 0; i != 6; i += 1)
-            if (tallies[i] == 3) {
-                _3 = true;
-                _3_at = i+1;
+            else if(pairScore > 0){
+                score += pairScore;
+                isPair = true;
             }
-
-        if (_2 && _3)
-            return _2_at * 2 + _3_at * 3;
-        else
-            return 0;
+        }
+        return (isPair && isThreeOfAKind)? score : 0;
     }
 }
