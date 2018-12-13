@@ -1,6 +1,69 @@
-import java.util.Arrays;
-
 public class Yatzy {
+
+    protected int[] dice;
+    public Yatzy(int d1, int d2, int d3, int d4, int d5) {
+        dice = new int[]{d1, d2, d3, d4, d5};
+    }
+
+    public int chance(){
+        return Yatzy.chance(this.dice[0], this.dice[1], this.dice[2], this.dice[3], this.dice[4]);
+    }
+
+    public int yatzy(){
+        return Yatzy.yatzy(this.dice);
+    }
+
+    public int ones(){
+        return Yatzy.ones(this.dice[0], this.dice[1], this.dice[2], this.dice[3], this.dice[4]);
+    }
+
+    public int twos(){
+        return Yatzy.ones(this.dice[0], this.dice[1], this.dice[2], this.dice[3], this.dice[4]);
+    }
+
+    public int threes(){
+        return Yatzy.ones(this.dice[0], this.dice[1], this.dice[2], this.dice[3], this.dice[4]);
+    }
+
+    public int fours() {
+        return Util.countOccurrence(4, dice) * 4;
+    }
+
+    public int fives() {
+        return Util.countOccurrence(5, dice) * 5;
+    }
+
+    public int sixes() {
+        return Util.countOccurrence(6, dice) * 6;
+    }
+
+    public int score_pair(){
+        return Yatzy.score_pair(this.dice[0], this.dice[1], this.dice[2], this.dice[3], this.dice[4]);
+    }
+
+    public int two_pair(){
+        return Yatzy.two_pair(this.dice[0], this.dice[1], this.dice[2], this.dice[3], this.dice[4]);
+    }
+
+    public int four_of_a_kind(){
+        return Yatzy.four_of_a_kind(this.dice[0], this.dice[1], this.dice[2], this.dice[3], this.dice[4]);
+    }
+
+    public int three_of_a_kind(){
+        return Yatzy.three_of_a_kind(this.dice[0], this.dice[1], this.dice[2], this.dice[3], this.dice[4]);
+    }
+
+    public int smallStraight(){
+        return Yatzy.smallStraight(this.dice[0], this.dice[1], this.dice[2], this.dice[3], this.dice[4]);
+    }
+
+    public int largeStraight(){
+        return Yatzy.largeStraight(this.dice[0], this.dice[1], this.dice[2], this.dice[3], this.dice[4]);
+    }
+
+    public int fullHouse(){
+        return Yatzy.fullHouse(this.dice[0], this.dice[1], this.dice[2], this.dice[3], this.dice[4]);
+    }
 
     public static int chance(int d1, int d2, int d3, int d4, int d5) {
         return d1 + d2 + d3 + d4 + d5;
@@ -18,59 +81,45 @@ public class Yatzy {
         return (counts == 5)? 50 : 0;
     }
 
-    public static int countOccurrence(int number, int[] roll) {
-        int occurrencesNumber = 0;
-        for (int i = 0; i < roll.length; i++)
-            if (number == roll[i]) occurrencesNumber++;
-        return occurrencesNumber;
-    }
 
     public static int ones(int d1, int d2, int d3, int d4, int d5) {
         int[] roll = {d1, d2, d3, d4, d5} ;
-        int onesOccurrences = Yatzy.countOccurrence(1, roll);
+        int onesOccurrences = Util.countOccurrence(1, roll);
         return onesOccurrences;
     }
 
 
     public static int twos(int d1, int d2, int d3, int d4, int d5) {
         int[] roll = {d1, d2, d3, d4, d5} ;
-        int twosOccurrences = Yatzy.countOccurrence(2, roll);
+        int twosOccurrences = Util.countOccurrence(2, roll);
         return twosOccurrences * 2;
     }
 
     public static int threes(int d1, int d2, int d3, int d4, int d5) {
         int[] roll = {d1, d2, d3, d4, d5} ;
-        int threeOccurrences = Yatzy.countOccurrence(3, roll);
+        int threeOccurrences = Util.countOccurrence(3, roll);
         return threeOccurrences * 3;
     }
 
-    protected int[] dice;
-    public Yatzy(int d1, int d2, int d3, int d4, int d5) {
-        dice = new int[]{d1, d2, d3, d4, d5};
+    public static int fours(int d1, int d2, int d3, int d4, int d5) {
+        return new Yatzy(d1, d2, d3, d4, d5).fours();
     }
 
-    public int fours() {
-        return Yatzy.countOccurrence(4, dice) * 4;
+    public static int fives(int d1, int d2, int d3, int d4, int d5) {
+        return new Yatzy(d1, d2, d3, d4, d5).fives();
     }
 
-    public int fives() {
-        return Yatzy.countOccurrence(5, dice) * 5;
+    public static int sixes(int d1, int d2, int d3, int d4, int d5) {
+        return new Yatzy(d1, d2, d3, d4, d5).sixes();
     }
 
-    public int sixes() {
-        return Yatzy.countOccurrence(6, dice) * 6;
-    }
-
-    public static int findCategory(int number, int[] roll, int occurrenceCategory){
-        return (Yatzy.countOccurrence(number, roll) >= occurrenceCategory)? number * occurrenceCategory : 0;
-    }
 
     public static int score_pair(int d1, int d2, int d3, int d4, int d5)
     {
         int score = 0;
         int[] roll = {d1, d2, d3, d4, d5};
         for(int i=6; i>=1; i--){
-            score = Yatzy.findCategory(i, roll, Category.PAIR.getValue());
+            score = Util.findCategory(i, roll, Category.PAIR.getValue());
             if(score > 0) return score;
         }
         return score;
@@ -82,8 +131,8 @@ public class Yatzy {
         int pairOccurrence = 0;
         int[] roll = {d1, d2, d3, d4, d5};
         for(int i=6; i>=1; i--){
-            int pairScore = Yatzy.findCategory(i, roll, Category.PAIR.getValue());
-            if(pairScore > 0) {
+            int pairScore = Util.findCategory(i, roll, Category.PAIR.getValue());
+            if(pairScore > 0){
                 score += pairScore;
                 pairOccurrence++;
             }
@@ -95,7 +144,7 @@ public class Yatzy {
         int score = 0;
         int[] roll = {d1, d2, d3, d4, d5};
         for(int i=1; i<=6; i++){
-            score += Yatzy.findCategory(i, roll, Category.FOUR_OF_A_KIND.getValue());
+            score += Util.findCategory(i, roll, Category.FOUR_OF_A_KIND.getValue());
         }
         return score;
     }
@@ -104,50 +153,34 @@ public class Yatzy {
         int score = 0;
         int[] roll = {d1, d2, d3, d4, d5};
         for(int i=1; i<=6; i++){
-            score += Yatzy.findCategory(i, roll, Category.THREE_OF_A_KIND.getValue());
+            score += Util.findCategory(i, roll, Category.THREE_OF_A_KIND.getValue());
         }
         return score;
     }
 
     public static int smallStraight(int d1, int d2, int d3, int d4, int d5) {
-        int score = 0;
         int[] roll = {d1, d2, d3, d4, d5};
-        int[] smallStraight = {1, 2, 3, 4, 5};
-        Arrays.sort(roll);
-        if(Arrays.equals(smallStraight, roll))
-            score = 15;
-        return score;
+        return (Util.countOccurrence(1, roll) == 1
+                && Util.countOccurrence(2, roll) == 1
+                && Util.countOccurrence(3, roll) == 1
+                && Util.countOccurrence(4, roll) == 1
+                && Util.countOccurrence(5, roll) == 1)? 15 : 0;
     }
 
     public static int largeStraight(int d1, int d2, int d3, int d4, int d5) {
-        int score = 0;
         int[] roll = {d1, d2, d3, d4, d5};
-        int[] largeStraight = {2, 3, 4, 5, 6};
-        Arrays.sort(roll);
-        if(Arrays.equals(largeStraight, roll))
-            score = 20;
-        return score;
+        return (Util.countOccurrence(2, roll) == 1
+                && Util.countOccurrence(3, roll) == 1
+                && Util.countOccurrence(4, roll) == 1
+                && Util.countOccurrence(5, roll) == 1
+                && Util.countOccurrence(6, roll) == 1)? 20 : 0;
     }
 
     public static int fullHouse(int d1, int d2, int d3, int d4, int d5)
     {
-        int score = 0;
-        int[] roll = {d1, d2, d3, d4, d5};
-        boolean isThreeOfAKind = false;
-        boolean isPair = false;
-        int threeOfAKindScore, pairScore;
-        for(int i=1; i<=6; i++){
-            threeOfAKindScore = Yatzy.findCategory(i, roll, Category.THREE_OF_A_KIND.getValue());
-            pairScore = Yatzy.findCategory(i, roll, Category.PAIR.getValue());
-            if(threeOfAKindScore > 0){
-                score += threeOfAKindScore;
-                isThreeOfAKind = true;
-            }
-            else if(pairScore > 0){
-                score += pairScore;
-                isPair = true;
-            }
-        }
-        return (isPair && isThreeOfAKind)? score : 0;
+        int scorePair = score_pair(d1, d2, d3, d4, d5);
+        int threeOfAKind = three_of_a_kind(d1, d2, d3, d4, d5);
+        int scoreTotal = chance(d1, d2, d3, d4, d5);
+        return (scorePair > 0 && threeOfAKind > 0 && scoreTotal == scorePair + threeOfAKind)? scoreTotal : 0;
     }
 }
