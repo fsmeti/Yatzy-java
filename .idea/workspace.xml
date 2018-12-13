@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a771c0d-658c-40cd-a084-e9877ba6d686" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Yatzy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Yatzy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Yatzy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +24,59 @@
       <file leaf-file-name="Yatzy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Yatzy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+            <state relative-caret-position="3117">
+              <caret line="185" column="1" lean-forward="true" selection-start-line="185" selection-start-column="1" selection-end-line="185" selection-end-column="1" />
               <folding>
-                <element signature="e#95#96#0" expanded="true" />
-                <element signature="e#148#149#0" expanded="true" />
+                <element signature="e#1271#1272#0" expanded="true" />
+                <element signature="e#1323#1324#0" expanded="true" />
+                <element signature="e#187#188#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#745#746#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#1431#1432#0" expanded="true" />
+                <element signature="e#1487#1488#0" expanded="true" />
+                <element signature="e#1513#1514#0" expanded="true" />
+                <element signature="e#1569#1570#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
+                <element signature="e#1558#1559#0" expanded="true" />
+                <element signature="e#1618#1619#0" expanded="true" />
+                <element signature="e#1689#1690#0" expanded="true" />
+                <element signature="e#1749#1750#0" expanded="true" />
+                <element signature="e#1820#1821#0" expanded="true" />
+                <element signature="e#1880#1881#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Util.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Util.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+              <folding>
+                <element signature="e#132#133#0" expanded="true" />
+                <element signature="e#166#167#0" expanded="true" />
+                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,13 +85,29 @@
       <file leaf-file-name="YatzyTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/YatzyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Yatzy</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Util</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -50,6 +116,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Category.java" />
+        <option value="$PROJECT_DIR$/src/Util.java" />
         <option value="$PROJECT_DIR$/src/YatzyTest.java" />
         <option value="$PROJECT_DIR$/src/Yatzy.java" />
       </list>
@@ -61,11 +129,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
+    <option name="x" value="1336" />
+    <option name="width" value="593" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -100,7 +173,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -119,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.YatzyTest.test_2s">
+  <component name="RunManager" selected="JUnit.YatzyTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -140,13 +213,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="YatzyTest.chance_scores_sum_of_all_dice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="YatzyTest.fullHouse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Yatzy-java" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="YatzyTest" />
-      <option name="METHOD_NAME" value="chance_scores_sum_of_all_dice" />
+      <option name="METHOD_NAME" value="fullHouse" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -181,6 +254,23 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="YatzyTest" />
       <option name="METHOD_NAME" value="test_2s" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="YatzyTest.yatzy_scores_50" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Yatzy-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="YatzyTest" />
+      <option name="METHOD_NAME" value="yatzy_scores_50" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -231,16 +321,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.YatzyTest" />
-      <item itemvalue="JUnit.YatzyTest.chance_scores_sum_of_all_dice" />
       <item itemvalue="JUnit.YatzyTest.test_1s" />
       <item itemvalue="JUnit.YatzyTest.test_2s" />
+      <item itemvalue="JUnit.YatzyTest.yatzy_scores_50" />
+      <item itemvalue="JUnit.YatzyTest.fullHouse" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.YatzyTest" />
+        <item itemvalue="JUnit.YatzyTest.fullHouse" />
+        <item itemvalue="JUnit.YatzyTest.yatzy_scores_50" />
         <item itemvalue="JUnit.YatzyTest.test_2s" />
         <item itemvalue="JUnit.YatzyTest.test_1s" />
-        <item itemvalue="JUnit.YatzyTest.chance_scores_sum_of_all_dice" />
-        <item itemvalue="JUnit.YatzyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -254,47 +346,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544544566802</updated>
-      <workItem from="1544544569473" duration="4189000" />
+      <workItem from="1544544569473" duration="40026000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="YatzyTest - 2018.12.11 at 17h 10m 45s.xml">
+    <history-entry file="YatzyTest_fullHouse - 2018.12.13 at 14h 38m 51s.xml">
+      <configuration name="YatzyTest.fullHouse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="YatzyTest_fullHouse - 2018.12.13 at 14h 51m 21s.xml">
+      <configuration name="YatzyTest.fullHouse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="YatzyTest - 2018.12.13 at 14h 51m 23s.xml">
       <configuration name="YatzyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YatzyTest_chance_scores_sum_of_all_dice - 2018.12.11 at 17h 37m 35s.xml">
-      <configuration name="YatzyTest.chance_scores_sum_of_all_dice" configurationId="JUnit" />
+    <history-entry file="YatzyTest - 2018.12.13 at 14h 52m 27s.xml">
+      <configuration name="YatzyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YatzyTest_test_1s - 2018.12.11 at 17h 59m 31s.xml">
-      <configuration name="YatzyTest.test_1s" configurationId="JUnit" />
+    <history-entry file="YatzyTest - 2018.12.13 at 14h 55m 14s.xml">
+      <configuration name="YatzyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YatzyTest_test_1s - 2018.12.11 at 18h 07m 54s.xml">
-      <configuration name="YatzyTest.test_1s" configurationId="JUnit" />
+    <history-entry file="YatzyTest - 2018.12.13 at 16h 14m 20s.xml">
+      <configuration name="YatzyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YatzyTest_test_1s - 2018.12.11 at 18h 09m 01s.xml">
-      <configuration name="YatzyTest.test_1s" configurationId="JUnit" />
+    <history-entry file="YatzyTest - 2018.12.13 at 16h 33m 26s.xml">
+      <configuration name="YatzyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YatzyTest_test_1s - 2018.12.11 at 18h 10m 07s.xml">
-      <configuration name="YatzyTest.test_1s" configurationId="JUnit" />
+    <history-entry file="YatzyTest - 2018.12.13 at 16h 57m 51s.xml">
+      <configuration name="YatzyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YatzyTest_test_1s - 2018.12.11 at 18h 12m 24s.xml">
-      <configuration name="YatzyTest.test_1s" configurationId="JUnit" />
+    <history-entry file="YatzyTest - 2018.12.13 at 17h 03m 30s.xml">
+      <configuration name="YatzyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="YatzyTest_test_1s - 2018.12.11 at 18h 13m 17s.xml">
-      <configuration name="YatzyTest.test_1s" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YatzyTest_test_1s - 2018.12.11 at 18h 13m 34s.xml">
-      <configuration name="YatzyTest.test_1s" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YatzyTest_test_2s - 2018.12.11 at 18h 17m 17s.xml">
-      <configuration name="YatzyTest.test_2s" configurationId="JUnit" />
+    <history-entry file="YatzyTest - 2018.12.13 at 17h 09m 03s.xml">
+      <configuration name="YatzyTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4189000" />
+    <option name="totallyTimeSpent" value="40026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32884097" />
@@ -303,21 +396,21 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.504698" side_tool="true" weight="0.30592993" />
-      <window_info anchor="right" id="Maven Projects" order="10" sideWeight="0.48653847" weight="0.10939597" />
+      <window_info anchor="right" id="Maven Projects" order="10" sideWeight="0.48653847" weight="0.1086262" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49731544" weight="0.2277628" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49530202" weight="0.351752" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49530202" visible="true" weight="0.30862534" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.1509434" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1671141" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10604027" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" type="SLIDING" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34231806" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34196186" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32884097" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
@@ -337,24 +430,73 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/YatzyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="187">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
           <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Yatzy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state relative-caret-position="3117">
+          <caret line="185" column="1" lean-forward="true" selection-start-line="185" selection-start-column="1" selection-end-line="185" selection-end-column="1" />
           <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1487#1488#0" expanded="true" />
+            <element signature="e#1513#1514#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#1558#1559#0" expanded="true" />
+            <element signature="e#1618#1619#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1749#1750#0" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#1880#1881#0" expanded="true" />
           </folding>
         </state>
       </provider>
